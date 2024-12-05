@@ -1,0 +1,6 @@
+{
+  "layerSize": 128,
+  "epochs": 10,
+  "learningRate": 0.01,
+  "activationFunction": "relu"
+}

@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: observaibility
+  datasource:
+    url: ${POSTGRES_LOCAL_URL}
+    username: ${POSTGRES_LOCAL_USER}
+    password: ${POSTGRES_LOCAL_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+observability:
+  repository:
+    metric: postgres
+  model:
+    path: ${OBSERVABILITY_MODEL_PATH}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    metrics:
+      enabled: true
+    health:
+      enabled: true
+      show-details: always
