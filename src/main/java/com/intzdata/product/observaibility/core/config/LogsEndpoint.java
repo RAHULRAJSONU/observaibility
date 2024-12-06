@@ -2,14 +2,11 @@ package com.intzdata.product.observaibility.core.config;
 
 import com.intzdata.product.observaibility.core.data.entity.LogEntity;
 import com.intzdata.product.observaibility.core.data.entity.TrainingDataEntity;
-import com.intzdata.product.observaibility.core.data.models.ExceptionLog;
 import com.intzdata.product.observaibility.core.data.preprocessors.LogPreprocessorStrategy;
 import com.intzdata.product.observaibility.core.model.LogModelTrainingFactory;
 import com.intzdata.product.observaibility.core.model.ModelTrainingFactory;
-import com.intzdata.product.observaibility.core.model.ModelTrainingTemplate;
 import com.intzdata.product.observaibility.spi.repository.LogRepository;
 import com.intzdata.product.observaibility.spi.repository.TrainingDataRepository;
-import org.nd4j.linalg.api.ndarray.INDArray;
 import org.springframework.boot.actuate.endpoint.annotation.Endpoint;
 import org.springframework.boot.actuate.endpoint.annotation.ReadOperation;
 import org.springframework.boot.actuate.endpoint.annotation.Selector;
@@ -35,7 +32,7 @@ public class LogsEndpoint {
         this.trainingFactory = logModelTrainingFactory;
         this.logPreprocessorStrategy = logPreprocessorStrategy;
         this.trainingDataRepository = trainingDataRepository;
-        this.logRepository=logRepository;
+        this.logRepository = logRepository;
     }
 
     @ReadOperation

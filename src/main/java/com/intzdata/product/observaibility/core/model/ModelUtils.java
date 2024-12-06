@@ -8,6 +8,7 @@ import java.io.IOException;
 public class ModelUtils {
 
     private static final String MODEL_DIRECTORY = System.getenv("OBSERVABILITY_MODEL_PATH");
+
     public static void saveModel(MultiLayerNetwork model, String fileName) {
         File modelFile = new File(MODEL_DIRECTORY, fileName);
         try {

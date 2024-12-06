@@ -18,7 +18,7 @@ public class LogPreprocessorStrategy implements PreprocessorStrategy<LogEntity> 
 
     @Override
     public DataSet preprocess(List<LogEntity> data) {
-        log.info("preprocessing Log Strategy to prepare the dataset, data: {}",data);
+        log.info("preprocessing Log Strategy to prepare the dataset, data: {}", data);
         if (data == null || data.isEmpty()) {
             throw new IllegalStateException("No logs found for dataset preparation.");
         }
@@ -32,7 +32,7 @@ public class LogPreprocessorStrategy implements PreprocessorStrategy<LogEntity> 
 
                 INDArray labelVector = createOneHotLabel(logData.getLevel(), getLogLevelMap());
                 labels.add(labelVector);
-            }catch (Exception e){
+            } catch (Exception e) {
                 log.error("Error processing log: {}, skipping. {}", log, e.getMessage());
             }
         }
