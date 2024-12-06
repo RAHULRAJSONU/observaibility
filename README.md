@@ -42,8 +42,7 @@ The **Observability Enhancement Framework** integrates machine learning capabili
 1. Clone the repository:
    ```bash
    git clone <repository_url>
-   cd observability-enhancement-framework
-   ```
+   cd observaibility
 
 2. Configure the database in `application.yml`:
    ```yaml
