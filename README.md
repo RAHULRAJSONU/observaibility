@@ -22,10 +22,6 @@ The **Observability Enhancement Framework** integrates machine learning capabili
 - **DeepLearning4J**: Machine learning model training and inference.
 - **Java**: Core application logic and data processing.
 
-### **Frontend**
-- **ReactJS**: Dashboard for visualizing data, model metrics, and predictions.
-- **Chart.js/D3.js**: Interactive graphs and charts.
-
 ### **Data Storage**
 - **Relational Database**: PostgreSQL/MySQL for storing training data and results.
 
@@ -41,7 +37,7 @@ The **Observability Enhancement Framework** integrates machine learning capabili
 ### **Backend Setup**
 1. Clone the repository:
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/RAHULRAJSONU/observaibility.git
    cd observaibility
 
 2. Configure the database in `application.yml`:
@@ -58,24 +54,6 @@ The **Observability Enhancement Framework** integrates machine learning capabili
    ./gradlew bootRun
    ```
 
-### **Frontend Setup**
-1. Navigate to the `frontend` directory:
-   ```bash
-   cd frontend
-   ```
-
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-3. Start the ReactJS application:
-   ```bash
-   npm start
-   ```
-
----
-
 ## **Usage**
 
 ### **Endpoints Overview**
@@ -85,9 +63,6 @@ The **Observability Enhancement Framework** integrates machine learning capabili
 | `/api/metrics/predictions`        | GET    | Fetch predictions for metric data.    |
 | `/api/dashboard/model-metrics`    | GET    | Retrieve model evaluation metrics.    |
 | `/api/dashboard/training-summary` | GET    | Get summary of training data.         |
-
-### **Frontend**
-Access the dashboard by navigating to `http://localhost:3000` after starting the frontend application.
 
 ---
 
