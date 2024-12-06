@@ -139,7 +139,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## **Contact**
 
 For questions or suggestions, please contact:
-- **Email**: support@example.com
-- **GitHub Issues**: [Open an Issue](https://github.com/your-repo/issues)
+- **Email**: rajrahul9939@gmail.com
+- **GitHub Issues**: [Open an Issue](https://github.com/observaibility/issues)
 
 Enjoy building with the **Observability Enhancement Framework**! 🚀
